@@ -54,6 +54,7 @@ dependencies {
     // core components
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     // compose
     implementation(platform(libs.androidx.compose.bom))
@@ -62,11 +63,13 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.material3.icons.extended)
+
 
     // google services and firebase
     implementation(platform(libs.google.services.bom))
     implementation(libs.firebase.auth)
-
+    implementation(libs.firebase.realtime.db)
 
     // testing
     testImplementation(libs.junit)
